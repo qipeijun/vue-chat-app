@@ -1,2 +1,13 @@
-import { createPinia } from 'pinia'
-export default createPinia()
+import { defineStore } from 'pinia'
+
+export const useChatStore = defineStore('chat', {
+  state: () => ({
+    messages: [],
+  }),
+  actions: {
+    addMessage(message) {
+      this.messages.push(message)
+    },
+  },
+})
+

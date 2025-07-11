@@ -24,11 +24,11 @@
 
 <script setup>
 import { watch } from 'vue'
-import ChatSidebar from './components/ChatSidebar.vue'
-import ChatWindow from './components/ChatWindow.vue'
-import { useTheme } from './composables/useTheme.js'
-import { useChat } from './composables/useChat.js'
-import { useConversations } from './composables/useConversations.js'
+import ChatSidebar from '@/components/ChatSidebar.vue'
+import ChatWindow from '@/components/ChatWindow.vue'
+import { useTheme } from '@/composables/useTheme.js'
+import { useChat } from '@/composables/useChat.js'
+import { useConversations } from '@/composables/useConversations.js'
 
 /**
  * 主应用组件

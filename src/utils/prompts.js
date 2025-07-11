@@ -1,11 +1,11 @@
 import { h } from 'vue'
 import { Space } from 'ant-design-vue'
-import { 
-  FireOutlined, 
-  ReadOutlined, 
-  HeartOutlined, 
-  SmileOutlined, 
-  CommentOutlined 
+import {
+  FireOutlined,
+  ReadOutlined,
+  HeartOutlined,
+  SmileOutlined,
+  CommentOutlined
 } from '@ant-design/icons-vue'
 
 /**
@@ -26,7 +26,7 @@ export const placeholderPromptsItems = [
   {
     key: '1',
     label: renderTitle(
-      h(FireOutlined, { style: { color: '#FF4D4F' } }), 
+      h(FireOutlined, { style: { color: '#FF4D4F' } }),
       'Hot Topics'
     ),
     description: 'What are you interested in?',
@@ -48,7 +48,7 @@ export const placeholderPromptsItems = [
   {
     key: '2',
     label: renderTitle(
-      h(ReadOutlined, { style: { color: '#1890FF' } }), 
+      h(ReadOutlined, { style: { color: '#1890FF' } }),
       'Design Guide'
     ),
     description: 'How to design a good product?',
@@ -79,12 +79,12 @@ export const placeholderPromptsItems = [
 export const senderPromptsItems = [
   {
     key: '1',
-    description: 'Hot Topics',
+    description: '热门话题',
     icon: h(FireOutlined, { style: { color: '#FF4D4F' } }),
   },
   {
     key: '2',
-    description: 'Design Guide',
+    description: '设计指南',
     icon: h(ReadOutlined, { style: { color: '#1890FF' } }),
   },
 ]
@@ -99,6 +99,6 @@ export function getPromptsByType(type) {
     placeholder: placeholderPromptsItems,
     sender: senderPromptsItems
   }
-  
+
   return promptsMap[type] || []
-} 
+}
